@@ -1,0 +1,80 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:customcontrols="using:App2.CustomControls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <customcontrols:ScrollHostWithStepButtons x:Name="RecentAddView2" Margin="0,0">
+                <customcontrols:ScrollHostWithStepButtons.Content>
+                    <GridView ScrollViewer.VerticalScrollMode="Disabled" ScrollViewer.HorizontalScrollMode="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                        <GridView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <ItemsWrapGrid ItemWidth="180" Orientation="Vertical" MaximumRowsOrColumns="1" Margin="20,10,20,0"></ItemsWrapGrid>
+                            </ItemsPanelTemplate>
+                        </GridView.ItemsPanel>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                    </GridView>
+                </customcontrols:ScrollHostWithStepButtons.Content>
+            </customcontrols:ScrollHostWithStepButtons>
+            <customcontrols:ScrollHostWithStepButtons x:Name="RecentAddView" Margin="0,0">
+                <customcontrols:ScrollHostWithStepButtons.Content>
+                    <GridView ScrollViewer.VerticalScrollMode="Disabled" ScrollViewer.HorizontalScrollMode="Disabled" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                        <GridView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <ItemsWrapGrid ItemWidth="180" Orientation="Vertical" MaximumRowsOrColumns="1" Margin="20,10,20,0"></ItemsWrapGrid>
+                            </ItemsPanelTemplate>
+                        </GridView.ItemsPanel>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                        <GridViewItem></GridViewItem>
+                    </GridView>
+                </customcontrols:ScrollHostWithStepButtons.Content>
+            </customcontrols:ScrollHostWithStepButtons>
+        </StackPanel>
+    </Grid>
+</Page>

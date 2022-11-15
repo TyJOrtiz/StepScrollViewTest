@@ -1,0 +1,49 @@
+﻿<Application
+    x:Class="App2.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:custom="using:App2.CustomControls"
+    xmlns:local="using:App2">
+    <Application.Resources>
+        <Style TargetType="custom:ScrollHostWithStepButtons">
+            <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="custom:ScrollHostWithStepButtons">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="LeftState">
+                                    <VisualState x:Name="LeftDisabled">
+                                        <VisualState.Setters>
+                                            <Setter Target="Left.Visibility" Value="Collapsed" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="LeftEnabled">
+                                        <VisualState.Setters>
+                                            <Setter Target="Left.Visibility" Value="Visible" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="RightState">
+                                    <VisualState x:Name="RightDisabled">
+                                        <VisualState.Setters>
+                                            <Setter Target="Right.Visibility" Value="Collapsed" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="RightEnabled">
+                                        <VisualState.Setters>
+                                            <Setter Target="Right.Visibility" Value="Visible" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ScrollViewer x:Name="PART_ScrollViewer" HorizontalScrollMode="Disabled" HorizontalScrollBarVisibility="Hidden" VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Hidden" Content="{TemplateBinding Content}"></ScrollViewer>
+                            <Button HorizontalAlignment="Left" VerticalAlignment="Stretch" x:Name="Left">HI</Button>
+                            <Button HorizontalAlignment="Right" x:Name="Right" VerticalAlignment="Stretch">HI</Button>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>
