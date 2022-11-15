@@ -120,49 +120,6 @@ namespace App2.CustomControls
                 if (e.NewValue is ListViewBase)
                 {
                     Debug.WriteLine("it's a ListView");
-                    //(d as ScrollHostWithStepButtons).Loaded += (a,b) =>
-                    //{ 
-                    //    //var scroll = (d as ScrollHostWithStepButtons).GetTemplateChild("PART_ScrollViewer") as ScrollViewer;
-                    //    //if (scroll.HorizontalOffset == 0) //vertical offset 0 => at the top of the scrollviewer
-                    //    //    VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "LeftDisabled", false);
-                    //    //else
-                    //    //    VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "LeftEnabled", false);
-
-
-                    //    //if (scroll.HorizontalOffset +
-                    //    //    scroll.ActualWidth < scroll.ExtentWidth)
-                    //    //    VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "RightEnabled", false);
-                    //    //else
-                    //    //    VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "RightDisabled", false);
-                    //    //scroll.SizeChanged += (f, g) =>
-                    //    //{
-                    //    //    if (scroll.HorizontalOffset == 0) //vertical offset 0 => at the top of the scrollviewer
-                    //    //        VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "LeftDisabled", false);
-                    //    //    else
-                    //    //        VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "LeftEnabled", false);
-
-
-                    //    //    if (scroll.HorizontalOffset +
-                    //    //        g.NewSize.Width < scroll.ExtentWidth)
-                    //    //        VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "RightEnabled", false);
-                    //    //    else
-                    //    //        VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "RightDisabled", false);
-                    //    //};
-                    //    //scroll.ViewChanged += (s, c) =>
-                    //    //{
-                    //    //    if (scroll.HorizontalOffset == 0) //vertical offset 0 => at the top of the scrollviewer
-                    //    //        VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "LeftDisabled", false);
-                    //    //    else
-                    //    //        VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "LeftEnabled", false);
-
-
-                    //    //    if (scroll.HorizontalOffset +
-                    //    //        scroll.ActualWidth < scroll.ExtentWidth)
-                    //    //        VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "RightEnabled", false);
-                    //    //    else
-                    //    //        VisualStateManager.GoToState((d as ScrollHostWithStepButtons), "RightDisabled", false);
-                    //    //}; 
-                    //};
                 }
             }
         }
